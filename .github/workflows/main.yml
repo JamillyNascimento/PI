@@ -32,6 +32,6 @@ jobs:
           server: ftpupload.net
           username: ${{ secrets.username }}
           password: ${{ secrets.password }}
-          local-dir: ./
+          local-dir: ./CapTour/
           server-dir: /htdocs/
           dangerous-clean-slate: false
