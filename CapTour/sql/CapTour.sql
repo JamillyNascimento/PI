@@ -38,7 +38,6 @@ CREATE TABLE IF NOT EXISTS POUSADAS (
     IDFOTOS INT NOT NULL,
     CONSTRAINT FK_FOTOS_POUSADAS FOREIGN KEY (IDFOTOS) REFERENCES FOTOS(IDFOTOS)
 );
-;
  
 INSERT INTO `cadastro` (`IDCADASTRO`, `nome`, `email`, `senha`, `status`) VALUES
 (4, 'Jamilly', 'jamilly@gmail.com', 123, 1),
@@ -50,7 +49,6 @@ INSERT INTO FOTOS (IMAGEM)
 VALUES ("https://github.com/JamillyNascimento/Captour/blob/main/images/foto1.jpg"),
 ("https://github.com/JamillyNascimento/Captour/blob/main/images/foto2.jpg"),
 ("https://github.com/JamillyNascimento/Captour/blob/main/images/foto3.jpg");
-
 
 INSERT INTO PONTOS (NOME, DESCRICAO, IDFOTOS)
 VALUES ("Cachoeira Cascatinha", "A propriedade é particular, por isso é cobrada uma taxa para passar o dia (por volta de R$25,00 por pessoa). Para quem gosta de se aventurar, tem a possibilidade de descer pelas pedras e encontrar outras quedas d’Água. Comum nas cachoeiras, algumas pedras são extremamente lisas e fáceis de escorregar, cuidado redobrado na hora de passar por elas nunca é demais. Quando o tempo forma para chuva é recomendado sair da água, pois a forte tromba d’água pode causar acidentes, deixando algumas pessoas ilhadas. Em dias de verão é um ótimo espaço para tomar sol e aproveitar tudo aquilo que a natureza oferece com calor e diversão.", 1),
